@@ -11,6 +11,7 @@ einops
 tiktoken
 git+https://github.com/deepseek-ai/Janus
 numpy<2.0.0
+requests
 
 # jupyter
 jupyterlab
