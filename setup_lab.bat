@@ -9,7 +9,7 @@ call "C:\Users\%USERNAME%\miniconda3\Scripts\activate.bat" deepseek_openvino
 echo Installing requirements...
 python -m pip install --upgrade pip
 pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
-pip install -U "openvino>=2025.0.0" openvino-tokenizers openvino-genai --extra-index-url https://storage.openvinotoolkit.org/simple/wheels/nightly
+pip install --pre -U openvino-genai --extra-index-url https://storage.openvinotoolkit.org/simple/wheels/nightly
 
 echo Checking installed packages...
 conda list
